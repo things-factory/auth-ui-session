@@ -1,4 +1,4 @@
-import { store, showSnackbar, i18next } from '@things-factory/shell'
+import { auth, store, showSnackbar, i18next } from '@things-factory/shell'
 
 export default function bootstrap() {
   function onProfile(profile) {}
