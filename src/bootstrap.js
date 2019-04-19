@@ -1,10 +1,9 @@
 import { store, showSnackbar, i18next } from '@things-factory/shell'
 
 export default function bootstrap() {
-  function onProfileChanged(e) {}
+  function onProfile(profile) {}
 
-  function onAuthenticatedChanged(e) {
-    var auth = e.detail
+  function onAuthentication() {
     store.dispatch(
       showSnackbar(
         i18next.t('text.you.are.now.in', {
@@ -16,11 +15,12 @@ export default function bootstrap() {
     )
   }
 
-  function onAuthErrorChanged(e) {
-    store.dispatch(showSnackbar(e.detail))
+  function onError(e) {
+    store.dispatch(showSnackbar(e))
   }
 
-  document.addEventListener('profile-changed', onProfileChanged)
-  document.addEventListener('authenticated-changed', onAuthenticatedChanged)
-  document.addEventListener('auth-error-changed', onAuthErrorChanged)
+  auth.on('profile', onProfile)
+  auth.on('signin', onAuthentication)
+  auth.on('signout', onAuthentication)
+  auth.on('error', onError)
 }
