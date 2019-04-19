@@ -25,6 +25,9 @@ export class AuthProfile extends PageView {
         }
 
         div {
+          flex: 1;
+
+          overflow-y: auto;
           text-align: center;
         }
 
@@ -78,6 +81,8 @@ export class AuthProfile extends PageView {
 
   render() {
     return html`
+      <page-toolbar></page-toolbar>
+
       <div>
         <h3>Auth Profile</h3>
 
