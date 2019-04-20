@@ -81,11 +81,11 @@ export class AuthProfile extends PageView {
 
   render() {
     return html`
-      <page-toolbar></page-toolbar>
+      <page-toolbar>
+        <label>Auth Profile</label>
+      </page-toolbar>
 
       <div>
-        <h3>Auth Profile</h3>
-
         <div>
           <p>Login: <b>${this.login}</b></p>
         </div>
