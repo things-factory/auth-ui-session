@@ -6,15 +6,15 @@ export default {
   routes: [
     {
       tagname: 'auth-signup',
-      pageName: 'signup'
+      page: 'signup'
     },
     {
       tagname: 'auth-signin',
-      pageName: 'signin'
+      page: 'signin'
     },
     {
       tagname: 'auth-profile',
-      pageName: 'profile'
+      page: 'profile'
     }
   ],
   bootstrap

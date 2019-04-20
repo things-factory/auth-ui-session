@@ -2,14 +2,14 @@ export default function route(page) {
   switch (page) {
     case 'signup':
       import('./pages/signup.js')
-      return true
+      return page
 
     case 'signin':
       import('./pages/signin.js')
-      return true
+      return page
 
     case 'profile':
       import('./pages/profile.js')
-      return true
+      return page
   }
 }
