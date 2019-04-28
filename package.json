@@ -1,6 +1,6 @@
 {
   "name": "@things-factory/auth-ui-session",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "src/index.js",
   "things-factory": true,
   "license": "MIT",
@@ -11,9 +11,11 @@
   },
   "dependencies": {
     "@things-factory/auth-provider-session": "*",
+    "@things-factory/more-base": "*",
     "@things-factory/shell": "*"
   },
   "devDependencies": {
+    "@things-factory/more-ui": "*",
     "@things-factory/tester": "*"
   }
 }
