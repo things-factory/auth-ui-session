@@ -1,5 +1,7 @@
 import { html } from 'lit-html'
-import { auth, store, showSnackbar, i18next, loadPage, APPEND_APP_TOOL, TOOL_POSITION } from '@things-factory/shell'
+import { auth, store, loadPage } from '@things-factory/shell'
+import { i18next } from '@things-factory/i18n-base'
+import { showSnackbar, APPEND_APP_TOOL, TOOL_POSITION } from '@things-factory/layout-base'
 import { ADD_MORENDA } from '@things-factory/more-base'
 
 import '@material/mwc-icon'
@@ -39,7 +41,7 @@ export default function bootstrap() {
       template: html`
         <mwc-icon @click=${e => store.dispatch(loadPage('profile'))}>account_circle</mwc-icon>
       `,
-      position: TOOL_POSITION.RIGHT_END
+      position: TOOL_POSITION.RIGHT
     }
   })
 
