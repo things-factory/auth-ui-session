@@ -1,5 +1,6 @@
 import { html, css } from 'lit-element'
-import { auth, PageView } from '@things-factory/shell'
+import { PageView } from '@things-factory/shell'
+import { auth } from '@things-factory/auth-base'
 
 export class AuthSignOut extends PageView {
   static get styles() {

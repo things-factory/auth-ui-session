@@ -1,5 +1,6 @@
 import { html } from 'lit-html'
-import { auth, store, loadPage } from '@things-factory/shell'
+import { store, loadPage } from '@things-factory/shell'
+import { auth } from '@things-factory/auth-base'
 import { i18next } from '@things-factory/i18n-base'
 import { showSnackbar, APPEND_APP_TOOL, TOOL_POSITION } from '@things-factory/layout-base'
 import { ADD_MORENDA } from '@things-factory/more-base'
