@@ -42,7 +42,7 @@ export default function bootstrap() {
       template: html`
         <mwc-icon @click=${e => store.dispatch(loadPage('profile'))}>account_circle</mwc-icon>
       `,
-      position: TOOL_POSITION.RIGHT
+      position: TOOL_POSITION.REAR
     }
   })
 
