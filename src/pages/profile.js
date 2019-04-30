@@ -80,10 +80,10 @@ export class AuthProfile extends PageView {
     }
   }
 
-  get tools() {
-    return html`
-      <label>Auth Profile</label>
-    `
+  get context() {
+    return {
+      title: 'Auth Profile'
+    }
   }
 
   render() {
