@@ -40,7 +40,7 @@ export default function bootstrap() {
     type: APPEND_APP_TOOL,
     tool: {
       template: html`
-        <a href="profile">
+        <a href="profile" style="color: inherit; display: flex;">
           <mwc-icon>account_circle</mwc-icon>
         </a>
       `,
