@@ -15,9 +15,9 @@ export default function bootstrap() {
       setting: {
         seq: 10,
         template: html`
-          <div id="settingHeader">
-            <p><b>${profile.name}</b></p>
-            <p>${profile.email}</p>
+          <div style="background-color: #e5e5e5;height: 50px;padding: 20px 0px 20px 0px;text-align: center;">
+            <p style="margin:0"><b>${profile.name}</b></p>
+            <p style="margin:0">${profile.email}</p>
           </div>
         `
       }
