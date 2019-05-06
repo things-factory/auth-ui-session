@@ -72,4 +72,15 @@ export default function bootstrap() {
       }
     }
   })
+
+  import('./pages/change-password')
+  store.dispatch({
+    type: ADD_SETTING,
+    setting: {
+      seq: 30,
+      template: html`
+        <change-password></change-password>
+      `
+    }
+  })
 }
