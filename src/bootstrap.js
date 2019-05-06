@@ -4,11 +4,25 @@ import { auth } from '@things-factory/auth-base'
 import { i18next } from '@things-factory/i18n-base'
 import { showSnackbar, APPEND_APP_TOOL, TOOL_POSITION } from '@things-factory/layout-base'
 import { ADD_MORENDA } from '@things-factory/more-base'
+import { ADD_SETTING } from '@things-factory/setting-base'
 
 import '@material/mwc-icon'
 
 export default function bootstrap() {
-  function onProfile(profile) {}
+  function onProfile(profile) {
+    store.dispatch({
+      type: ADD_SETTING,
+      setting: {
+        seq: 10,
+        template: html`
+          <div id="settingHeader">
+            <p><b>${profile.name}</b></p>
+            <p>${profile.email}</p>
+          </div>
+        `
+      }
+    })
+  }
 
   function onAuthentication(on) {
     store.dispatch(
@@ -52,7 +66,7 @@ export default function bootstrap() {
   store.dispatch({
     type: ADD_MORENDA,
     morenda: {
-      name: 'Singout',
+      name: 'Sign Out',
       action: () => {
         auth.signout()
       }
