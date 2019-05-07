@@ -1,15 +1,52 @@
-import { html, LitElement } from 'lit-element'
+import { html, LitElement, css } from 'lit-element'
 import { auth } from '@things-factory/auth-base'
 
 export class ChangePassword extends LitElement {
+  static get styles() {
+    return [
+      css`
+        div#pwdSetting {
+          padding: 30px;
+        }
+        input {
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom-color: #32526a;
+          border-bottom-width: 1px;
+          width: 100%;
+          height: 30px;
+        }
+
+        div.field {
+          padding-bottom: 10px;
+        }
+
+        ::placeholder {
+          font-size: 0.8rem;
+        }
+
+        span {
+          color: #c0504d;
+          text-align: left;
+          font-size: 1em;
+        }
+      `
+    ]
+  }
+
   render() {
     return html`
-      <form id="changePass" @submit="${e => this._handleSubmit(e)}">
-        <div class="field"><input type="password" name="current_pass" placeholder="Current Password" /></div>
-        <div class="field"><input type="password" name="new_pass" placeholder="New Password" /></div>
-        <div class="field"><input type="password" name="confirm_pass" placeholder="Confirm Password" /></div>
-        <button class="ui button" type="submit">Change Password</button>
-      </form>
+      <div id="pwdSetting">
+        <span>Change Password</span><br />
+
+        <form id="changePass" @submit="${e => this._handleSubmit(e)}">
+          <div class="field"><input type="password" name="current_pass" placeholder="Current Password" /></div>
+          <div class="field"><input type="password" name="new_pass" placeholder="New Password" /></div>
+          <div class="field"><input type="password" name="confirm_pass" placeholder="Confirm Password" /></div>
+          <button class="ui button" type="submit">Change Password</button>
+        </form>
+      </div>
     `
   }
 
