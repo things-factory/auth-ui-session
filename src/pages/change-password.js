@@ -41,9 +41,9 @@ export class ChangePassword extends LitElement {
         <span>Change Password</span><br />
 
         <form id="changePass" @submit="${e => this._handleSubmit(e)}">
-          <div class="field"><input type="password" name="current_pass" placeholder="Current Password" /></div>
-          <div class="field"><input type="password" name="new_pass" placeholder="New Password" /></div>
-          <div class="field"><input type="password" name="confirm_pass" placeholder="Confirm Password" /></div>
+          <div class="field"><input type="password" name="current_pass" placeholder="Current Password" required /></div>
+          <div class="field"><input type="password" name="new_pass" placeholder="New Password" required /></div>
+          <div class="field"><input type="password" name="confirm_pass" placeholder="Confirm Password" required /></div>
           <button class="ui button" type="submit">Change Password</button>
         </form>
       </div>
