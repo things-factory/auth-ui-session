@@ -39,13 +39,13 @@ export default function bootstrap() {
     )
   }
 
-  function onError(e) {
+  function onError(ex) {
     document.dispatchEvent(
       new CustomEvent('notify', {
         detail: {
           type: 'error',
-          message: e,
-          e
+          message: ex,
+          ex
         }
       })
     )
