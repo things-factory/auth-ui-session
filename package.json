@@ -1,6 +1,6 @@
 {
   "name": "@things-factory/auth-ui-session",
-  "version": "0.1.27",
+  "version": "0.1.28",
   "main": "dist-server/index.js",
   "browser": "client/index.js",
   "things-factory": true,
@@ -27,6 +27,7 @@
     "@things-factory/auth-base": "*",
     "@things-factory/auth-provider-session": "*",
     "@things-factory/i18n-base": "*",
+    "@things-factory/layout-base": "*",
     "@things-factory/more-base": "*",
     "@things-factory/shell": "*"
   },
