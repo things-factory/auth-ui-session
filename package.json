@@ -1,6 +1,6 @@
 {
   "name": "@things-factory/auth-ui-session",
-  "version": "0.1.31",
+  "version": "0.1.32",
   "main": "dist-server/index.js",
   "browser": "client/index.js",
   "things-factory": true,
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "@material/mwc-icon": "^0.5.0",
+    "@things-factory/apptool-base": "*",
     "@things-factory/auth-base": "*",
     "@things-factory/auth-provider-session": "*",
     "@things-factory/i18n-base": "*",
