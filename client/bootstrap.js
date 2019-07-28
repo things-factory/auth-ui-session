@@ -8,6 +8,7 @@ import { ADD_MORENDA } from '@things-factory/more-base'
 import { ADD_SETTING } from '@things-factory/setting-base'
 
 import '@material/mwc-icon'
+import './pages/change-password'
 
 export default function bootstrap() {
   function onProfile(profile) {
@@ -85,7 +86,6 @@ export default function bootstrap() {
     }
   })
 
-  import('./pages/change-password')
   store.dispatch({
     type: ADD_SETTING,
     setting: {
