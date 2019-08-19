@@ -115,12 +115,12 @@ export class AuthProfile extends PageView {
 
         <div>
           Super User
-          <input type="checkbox" ?checked=${this.super_user} disabled></p>
+          <input type="checkbox" .checked=${this.super_user} disabled></p>
         </div>
 
         <div>
           Admin Flag
-          <input type="checkbox" ?checked=${this.admin_flag} disabled></p>
+          <input type="checkbox" .checked=${this.admin_flag} disabled></p>
         </div>
 
         <button @click="${() => auth.signout()}">Sign Out</button>
