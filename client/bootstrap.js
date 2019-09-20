@@ -1,5 +1,5 @@
 import { html } from 'lit-html'
-import { store, loadPage } from '@things-factory/shell'
+import { store } from '@things-factory/shell'
 import { auth } from '@things-factory/auth-base'
 import { i18next } from '@things-factory/i18n-base'
 import { TOOL_POSITION } from '@things-factory/layout-base'
@@ -11,21 +11,6 @@ import '@material/mwc-icon'
 import './pages/change-password'
 
 export default function bootstrap() {
-  function onProfile(profile) {
-    store.dispatch({
-      type: ADD_SETTING,
-      setting: {
-        seq: 10,
-        template: html`
-          <div style="background-color: #e5e5e5;height: 50px;padding: 20px 0px 20px 0px;text-align: center;">
-            <p style="margin:0"><b>${profile.name}</b></p>
-            <p style="margin:0">${profile.email}</p>
-          </div>
-        `
-      }
-    })
-  }
-
   function onAuthentication(on) {
     document.dispatchEvent(
       new CustomEvent('notify', {
@@ -53,7 +38,6 @@ export default function bootstrap() {
     )
   }
 
-  auth.on('profile', onProfile)
   auth.on('signin', () => {
     onAuthentication(true)
   })
