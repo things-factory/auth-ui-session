@@ -1,6 +1,6 @@
 {
   "name": "@things-factory/auth-ui-session",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "dist-server/index.js",
   "browser": "client/index.js",
   "things-factory": true,
@@ -23,7 +23,7 @@
     "migration:revert": "node ./node_modules/typeorm/cli.js migration:revert"
   },
   "dependencies": {
-    "@material/mwc-icon": "^0.9.0",
+    "@material/mwc-icon": "^0.8.0",
     "@things-factory/apptool-base": "*",
     "@things-factory/auth-base": "*",
     "@things-factory/auth-provider-session": "*",
