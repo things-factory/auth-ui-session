@@ -1,6 +1,6 @@
 {
   "name": "@things-factory/auth-ui-session",
-  "version": "0.2.1",
+  "version": "0.9.0",
   "main": "dist-server/index.js",
   "browser": "client/index.js",
   "things-factory": true,
@@ -24,14 +24,14 @@
   },
   "dependencies": {
     "@material/mwc-icon": "^0.8.0",
-    "@things-factory/apptool-base": "*",
-    "@things-factory/auth-base": "*",
-    "@things-factory/auth-provider-session": "*",
-    "@things-factory/i18n-base": "*",
-    "@things-factory/layout-base": "*",
-    "@things-factory/more-base": "*",
-    "@things-factory/setting-base": "*",
-    "@things-factory/shell": "*"
+    "@things-factory/apptool-base": "^0.9.0",
+    "@things-factory/auth-base": "^0.9.0",
+    "@things-factory/auth-provider-session": "^0.9.0",
+    "@things-factory/i18n-base": "^0.9.0",
+    "@things-factory/layout-base": "^0.9.0",
+    "@things-factory/more-base": "^0.9.0",
+    "@things-factory/setting-base": "^0.9.0",
+    "@things-factory/shell": "^0.9.0"
   },
   "devDependencies": {
     "@things-factory/tester": "*"
